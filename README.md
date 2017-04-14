@@ -1,0 +1,1 @@
+Just a experimental project (for now) using the [Chrome NFC API](https://github.com/GoogleChrome/chrome-nfc)
