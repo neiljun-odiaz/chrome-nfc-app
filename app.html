@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>chrome.nfc API sample</title>
+    <link href="lib/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="app.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="wrapper">
+
+    <img id="device-thumbnail" class="hidden"/>
+    <dl id="device-info">
+        <dt>Name</dt>
+        <dd id="device-name"></dd>
+        <dt>Vendor ID</dt>
+        <dd id="device-vendor-id"></dd>
+        <dt>Product ID</dt>
+        <dd id="device-product-id"></dd>
+    </dl>
+    <div id="read-ndef">
+        <button type="button" class="btn btn-default">Run</button>
+    </div>
+    <br>
+    <div id="write-ndef">
+        <select id="write-ndef-type" class="form-control">
+            <option>text</option>
+            <option>uri</option>
+            <option>aar</option>
+        </select>
+        <input type="text" class="form-control" id="write-ndef-value">
+        <button type="button" class="btn btn-default">Run</button>
+    </div>
+</div>
+
+<div id="logContainer" class="small">
+    <div class="drawer"></div>
+    <div class="logs"></div>
+</div>
+
+<script src="lib/jquery-2.1.0.min.js"></script>
+<script src="lib/bootstrap.min.js"></script>
+<script src="chrome-nfc.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "NFC Sample",
+  "version": "0.1",
+  "description": "chrome.nfc API sample",
+  "manifest_version": 2,
+  "permissions": [
+    "usb",
+    {
+      "usbDevices": [
+        {
+          "vendorId": 1839,
+          "productId": 8704
+        }
+        // ACR122U
+      ]
+    }
+  ],
+  "app": {
+    "background": {
+      "scripts": [
+        "background.js"
+      ]
+    }
+  }
+}
